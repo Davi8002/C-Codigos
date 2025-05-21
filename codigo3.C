@@ -24,12 +24,12 @@ int main(void) {
   scanf("%d", &teste.id);
   // scanf("texto e %x", nomedavariavel)
   getchar();
-  // limpa o buffercom o \n pra o proximo fgets nao pegar ele
+  // limpa o buffer com o \n pra o proximo fgets nao pegar ele
 
   printf("Digite o autor do Livro!\n");
   fgets(teste.autor, 50, stdin);
   teste.autor[strcspn(teste.autor, "\n")] = '\0';
-  // verifica onde ta com o espaço e depois troca pelo fim da string
+  // verifica onde ta com o \n do enter e depois troca pelo fim da string
 
   printf("Digite a sinopse do Livro!\n");
   fgets(teste.sinopse, 250, stdin);
