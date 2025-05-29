@@ -55,4 +55,37 @@ int main(void) {
     
   printf("Seu resultado é %1.2f", numero);
   return 0;
+
+  #include <stdio.h>
+#include <string.h>
+
+int main(void) {
+  
+  float numero;
+  float numerototal = 0;
+
+  printf("Digite o primeiro número\n");
+  scanf("%f", &numero);
+  numerototal += numero;
+  printf("Digite o segundo número\n");
+  scanf("%f", &numero);
+  numerototal += numero;
+  printf("Digite o terceiro número\n");
+  scanf("%f", &numero);
+  numerototal += numero;
+  printf("Digite o quarto número\n");
+  scanf("%f", &numero);
+  numerototal += numero;
+  printf("Digite o quinta número\n");
+  scanf("%f", &numero);
+  numerototal += numero;
+  printf("Digite o sexto número\n");
+  scanf("%f", &numero);
+  numerototal += numero;
+  numerototal = numerototal/6;
+  printf("Sua média é %f\n", numerototal);
 }
+
+}
+
+
