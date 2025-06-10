@@ -35,26 +35,8 @@ int main(void) {
     break;
   }
 
-
-
   printf("Seu resultado é %1.1f", resultado);
 
-  int a, b, c;
-
-  printf("Digite o primeiro lado\n");
-  scanf("%d", &a);
-  printf("Digite o segundo lado\n");
-  scanf("%d", &b);
-  printf("Digite o segundo lado\n");
-  scanf("%d", &c);
-
-  if (a + b > c && a + c > b && b + c > a) {
-    if (a == b && b == c) {
-      printf("Seu triangulo é Equilátero");
-    } else if (a != b && b != c && c != a) {
-      printf("Seu triangulo é Escaleno");
-    } else if (a == b || a == c || b == c) {
-      printf("Seu triangulo é Isósceles");
     }
   }
 
