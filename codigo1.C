@@ -36,10 +36,8 @@ int main(void) {
   }
 
   printf("Seu resultado é %1.1f", resultado);
-
+   return 0;
     }
-  }
-
-  return 0;
-}
  
+
+
