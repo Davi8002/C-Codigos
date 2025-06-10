@@ -7,6 +7,7 @@ int main(void) {
   int numeroRandom;
   int numeroChute = 101;
   int vidas;
+  int derrotas = 0;
   
   printf("ESCOLHA SUA QUANTIDADE DE VIDAS\n");
   scanf("%d", &vidas);
@@ -32,12 +33,14 @@ int main(void) {
     } else if (numeroChute > numeroRandom) {
       printf("\nTENTE UM NUMERO MENOR\n\n");
       vidas--;
+      derrotas++;
     } else if (numeroChute < numeroRandom) {
       printf("\nTENTE UM NUMERO MAIOR\n\n");
       vidas--;
+      derrotas++;
     }
 
-    if (vidas == 3 && numeroRandom != numeroChute){
+    if (derrotas == 3 && numeroRandom != numeroChute){
       if(numeroRandom % 2 == 0){
         printf("\nSEU NUMERO É PAR\n\n");
       }else if(numeroRandom % 2 == 1 ){
