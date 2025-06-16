@@ -14,6 +14,7 @@ typedef struct {
 
 int main(void) {
   Livro livro[2];
+  Livro teste;
   
 
   printf("Digite o nome do Livro!\n");
