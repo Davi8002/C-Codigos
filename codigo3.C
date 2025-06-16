@@ -13,7 +13,8 @@ typedef struct {
 } Livro;
 
 int main(void) {
-  Livro teste;
+  Livro livro[2];
+  
 
   printf("Digite o nome do Livro!\n");
   fgets(teste.nome, 50, stdin);
