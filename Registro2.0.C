@@ -1,6 +1,3 @@
-//codigo com erro solução em andamento 
-
-
 #include <stdio.h>
 #include <string.h>
 
@@ -13,12 +10,11 @@ typedef struct {
   int paginas;
 
 } Livro;
+int quantidadeLivro = 0;
+Livro livro[20];
 
-Livro livro[5];
 
-
-void registro(i){
-  Livro livro[i];
+void registro(int i){
   printf("Digite o nome do Livro!\n");
   fgets(livro[i].nome, 50, stdin);
   // fgets(nomedoobjeto, tamanhodotexto, stdin)
@@ -46,6 +42,7 @@ livro[i].sinopse[strcspn(livro[i].sinopse, "\n")] = '\0';
   printf("Digite a quantidade de paginas do Livro!\n");
   scanf("%d", &livro[i].paginas);
   getchar();
+  //fflush(stdin);
 
   printf("\n--- Livro Cadastrado ---\n");
   printf("Nome: %s\n", livro[i].nome);
@@ -54,14 +51,13 @@ livro[i].sinopse[strcspn(livro[i].sinopse, "\n")] = '\0';
   printf("Sinopse: %s\n", livro[i].sinopse);
   printf("Gênero: %s\n", livro[i].genero);
   printf("Páginas: %d\n", livro[i].paginas);
-
+  quantidadeLivro++;
   return;
 };
 
 
 int main(void) {
-  registro(1);
-                
-  printf("Páginas: %d\n", livro[0].paginas);
+  registro(quantidadeLivro);      
+
  
 }
