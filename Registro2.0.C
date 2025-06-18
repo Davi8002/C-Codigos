@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 #include <string.h>
 
 typedef struct {
@@ -8,6 +9,7 @@ typedef struct {
   char sinopse[250];
   char genero[50];
   int paginas;
+  bool emprestimo;
 
 } Livro;
 int quantidadeLivro = 0;
@@ -43,7 +45,8 @@ livro[i].sinopse[strcspn(livro[i].sinopse, "\n")] = '\0';
   scanf("%d", &livro[i].paginas);
   getchar();
   //fflush(stdin);
-
+  livro[i].emprestimo = false;
+  
   printf("\n--- Livro Cadastrado ---\n");
   printf("Nome: %s\n", livro[i].nome);
   printf("ID: %d\n", livro[i].id);
