@@ -20,7 +20,7 @@ void registro(int i){
   printf("Digite o nome do Livro!\n");
   fgets(livro[i].nome, 50, stdin);
   // fgets(nomedoobjeto, tamanhodotexto, stdin)
-livro[i].nome[strcspn(livro[i].nome, "\n")] = '\0'; // naoentendimasta
+livro[i].nome[strcspn(livro[i].nome, "\n")] = '\0'; 
 
   printf("Digite o id do Livro!\n");
   scanf("%d", &livro[i].id);
